@@ -1,14 +1,12 @@
-package com.fxd927.lanthanist.block;
+package com.fxd927.lanthanist.registries;
 
 import com.fxd927.lanthanist.Lanthanist;
-import com.fxd927.lanthanist.item.LanthanistItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -29,7 +27,7 @@ public class LanthanistBlocks {
     }
 
     static {
-        DYSPROSIUM_BLOCK = BLOCKS.register("dysprosium_block", () -> new Block(BlockBehaviour.Properties.of()
+        DYSPROSIUM_BLOCK = registerBlock("dysprosium_block", () -> new Block(BlockBehaviour.Properties.of()
                 .requiresCorrectToolForDrops()
                 .strength(5.0F, 6.0F)
                 .sound(SoundType.METAL)

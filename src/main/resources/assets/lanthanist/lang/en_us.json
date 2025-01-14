@@ -1,4 +1,6 @@
 {
-  "block.lanthanist.dysprosium_block": "Dysprosium Block",
-  "item.lanthanist.dysprosium_ingot": "Dysprosium Ingot"
+  "block.lanthanist.dysprosium_block": "Block of Dysprosium",
+  "creativetab.lanthanist.lanthanist": "Lanthanist",
+  "item.lanthanist.dysprosium_ingot": "Dysprosium Ingot",
+  "item.lanthanist.dysprosium_nugget": "Dysprosium Nugget"
 }

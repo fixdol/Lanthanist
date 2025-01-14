@@ -1,4 +1,6 @@
 {
   "block.lanthanist.dysprosium_block": "ジスプロシウムブロック",
-  "item.lanthanist.dysprosium_ingot": "ジスプロシウムインゴット"
+  "creativetab.lanthanist.lanthanist": "Lanthanist",
+  "item.lanthanist.dysprosium_ingot": "ジスプロシウムインゴット",
+  "item.lanthanist.dysprosium_nugget": "ジスプロシウム塊"
 }
