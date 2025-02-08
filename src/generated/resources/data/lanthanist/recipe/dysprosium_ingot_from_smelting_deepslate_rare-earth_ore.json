@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "dysprosium",
+  "ingredient": {
+    "item": "lanthanist:deepslate_rare-earth_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "lanthanist:dysprosium_ingot"
+  }
+}

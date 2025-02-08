@@ -1,0 +1,4 @@
+// 1.21.1	2025-02-07T19:24:59.2315178	Registries
+d3ebe665ae827b283621f32b56910719a7b813d2 data/lanthanist/neoforge/biome_modifier/add_rare-earth_ore.json
+171d5a4e1740ba2710f3df836ec5000aa561c0c6 data/lanthanist/worldgen/configured_feature/rare-earth_ore.json
+9be803e4511c358c95eaf77538f88581e2eee0c9 data/lanthanist/worldgen/placed_feature/rare-earth_ore_placed.json

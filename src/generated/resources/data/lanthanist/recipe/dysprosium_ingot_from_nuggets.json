@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "lanthanist:dysprosium_nugget"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DDD",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lanthanist:dysprosium_ingot"
+  }
+}

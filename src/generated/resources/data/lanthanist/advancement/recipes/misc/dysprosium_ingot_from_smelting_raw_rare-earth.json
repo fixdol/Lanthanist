@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_rare-earth": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lanthanist:raw_rare-earth"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lanthanist:dysprosium_ingot_from_smelting_raw_rare-earth"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_rare-earth"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lanthanist:dysprosium_ingot_from_smelting_raw_rare-earth"
+    ]
+  }
+}

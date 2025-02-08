@@ -17,8 +17,15 @@ public class LanthanistCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(LanthanistItems.DYSPROSIUM_INGOT.get()))
                     .title(Component.translatable("creativetab.lanthanist.lanthanist"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(LanthanistBlocks.RARE_EARTH_ORE);
+                        output.accept(LanthanistBlocks.DEEPSLATE_RARE_EARTH_ORE);
+                        output.accept(LanthanistBlocks.DYSPROSIUM_BLOCK);
+                        output.accept(LanthanistBlocks.LIGHT_ACCUMULATOR);
+                        output.accept(LanthanistItems.RAW_RARE_EARTH);
                         output.accept(LanthanistItems.DYSPROSIUM_INGOT);
                         output.accept(LanthanistItems.DYSPROSIUM_NUGGET);
-                        output.accept(LanthanistBlocks.DYSPROSIUM_BLOCK);
                     }).build());
+
+    private LanthanistCreativeModeTabs(){
+    }
 }

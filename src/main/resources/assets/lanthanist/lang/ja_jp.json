@@ -1,6 +1,11 @@
 {
   "block.lanthanist.dysprosium_block": "ジスプロシウムブロック",
+  "block.lanthanist.rare-earth_ore": "希土鉱石",
+  "block.lanthanist.deepslate_rare-earth_ore": "深層希土鉱石",
+  "block.lanthanist.light_accumulator": "蓄光機",
+  "block.lanthanist.optical_fiber": "光ファイバーケーブル",
   "creativetab.lanthanist.lanthanist": "Lanthanist",
   "item.lanthanist.dysprosium_ingot": "ジスプロシウムインゴット",
-  "item.lanthanist.dysprosium_nugget": "ジスプロシウム塊"
+  "item.lanthanist.dysprosium_nugget": "ジスプロシウム塊",
+  "item.lanthanist.raw_rare-earth": "希土類の原石"
 }

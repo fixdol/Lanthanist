@@ -1,8 +1,6 @@
 package com.fxd927.lanthanist;
 
-import com.fxd927.lanthanist.registries.LanthanistBlocks;
-import com.fxd927.lanthanist.registries.LanthanistCreativeModeTabs;
-import com.fxd927.lanthanist.registries.LanthanistItems;
+import com.fxd927.lanthanist.registries.*;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
@@ -28,6 +26,7 @@ public class Lanthanist
         modEventBus.addListener(this::commonSetup);
         LanthanistCreativeModeTabs.CREATIVE_MODE_TAB.register(modEventBus);
         LanthanistBlocks.BLOCKS.register(modEventBus);
+        LanthanistBlockEntity.BLOCK_ENTITY_TYPES.register(modEventBus);
         LanthanistItems.ITEMS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);

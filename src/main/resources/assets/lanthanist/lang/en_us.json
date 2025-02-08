@@ -1,6 +1,11 @@
 {
   "block.lanthanist.dysprosium_block": "Block of Dysprosium",
+  "block.lanthanist.rare-earth_ore": "Rare-Earth Ore",
+  "block.lanthanist.deepslate_rare-earth_ore": "Deepslate Rare-Earth Ore",
+  "block.lanthanist.light_accumulator": "Light Accumulator",
+  "block.lanthanist.optical_fiber": "Optical Fiber Cable",
   "creativetab.lanthanist.lanthanist": "Lanthanist",
   "item.lanthanist.dysprosium_ingot": "Dysprosium Ingot",
-  "item.lanthanist.dysprosium_nugget": "Dysprosium Nugget"
+  "item.lanthanist.dysprosium_nugget": "Dysprosium Nugget",
+  "item.lanthanist.raw_rare-earth": "Raw Rare-Earth"
 }
