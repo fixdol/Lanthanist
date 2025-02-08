@@ -17,6 +17,7 @@ public class LanthanistBlockStateProvider extends BlockStateProvider {
         blockWithItem(LanthanistBlocks.DYSPROSIUM_BLOCK);
         blockWithItem(LanthanistBlocks.RARE_EARTH_ORE);
         blockWithItem(LanthanistBlocks.DEEPSLATE_RARE_EARTH_ORE);
+        blockWithItem(LanthanistBlocks.RAW_RARE_EARTH_BLOCK);
         blockWithItem(LanthanistBlocks.LIGHT_ACCUMULATOR);
     }
 

@@ -1,13 +1,16 @@
-// 1.21.1	2025-02-08T10:44:42.423183	Block States: lanthanist
+// 1.21.1	2025-02-08T16:56:41.3040788	Block States: lanthanist
 464013ebd3b42d91570cc35936831e92661c7df0 assets/lanthanist/blockstates/deepslate_rare-earth_ore.json
 ecaddfda122c204d7e0485e04faa3f37d395b70d assets/lanthanist/blockstates/dysprosium_block.json
 7e6489ba7b3a3993ecf81a9818f976342fc17747 assets/lanthanist/blockstates/light_accumulator.json
 fe310b448ef5fb43a4f9738d7b8b47ec1c555973 assets/lanthanist/blockstates/rare-earth_ore.json
+18ab99fff4238e8b0d7c9fa9c2a55321588f7a41 assets/lanthanist/blockstates/raw_rare-earth_block.json
 36584c8c2a6249eccde6d3a1adc79bc91573fab2 assets/lanthanist/models/block/deepslate_rare-earth_ore.json
 a5d97f9b56f593828995842d647ca2a7f86a6023 assets/lanthanist/models/block/dysprosium_block.json
 fcbb905027962b5ae153fb5b6e36d893ad0d8db1 assets/lanthanist/models/block/light_accumulator.json
 36fea35fe6401d7215df95ad1ba1efdf50a87598 assets/lanthanist/models/block/rare-earth_ore.json
+f715523cf13992f309f4c5c51d5916d6b531d749 assets/lanthanist/models/block/raw_rare-earth_block.json
 a20d5a3794b13b9be51874046006339f6f187217 assets/lanthanist/models/item/deepslate_rare-earth_ore.json
 e8bb4c57d408a2d768038f04ba816d9b2f2625d7 assets/lanthanist/models/item/dysprosium_block.json
 441daee27c7a37e6efc15c117f8cf2d1ace87105 assets/lanthanist/models/item/light_accumulator.json
 349e1a3b83d604e2e1fee09257e8ddcc218c0dac assets/lanthanist/models/item/rare-earth_ore.json
+ecb305693a01d918f26a86aea32cbf1e083e8363 assets/lanthanist/models/item/raw_rare-earth_block.json

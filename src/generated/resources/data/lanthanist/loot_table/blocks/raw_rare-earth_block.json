@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "lanthanist:light_accumulator"
+          "name": "lanthanist:raw_rare-earth_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "lanthanist:blocks/light_accumulator"
+  "random_sequence": "lanthanist:blocks/raw_rare-earth_block"
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "lanthanist:block/raw_rare-earth_block"
+  }
+}

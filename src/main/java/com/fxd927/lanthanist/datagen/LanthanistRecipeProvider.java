@@ -37,6 +37,13 @@ public class LanthanistRecipeProvider extends RecipeProvider implements IConditi
                 .define('D', LanthanistItems.DYSPROSIUM_NUGGET.get())
                 .unlockedBy("has_dysprosium_nugget", has(LanthanistItems.DYSPROSIUM_NUGGET)).save(recipeOutput, "lanthanist:dysprosium_ingot_from_nuggets");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LanthanistBlocks.RAW_RARE_EARTH_BLOCK.get())
+                .pattern("RRR")
+                .pattern("RRR")
+                .pattern("RRR")
+                .define('R', LanthanistItems.RAW_RARE_EARTH.get())
+                .unlockedBy("has_raw_rare-earth", has(LanthanistItems.RAW_RARE_EARTH)).save(recipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.DYSPROSIUM_INGOT.get(), 9)
                 .requires(LanthanistBlocks.DYSPROSIUM_BLOCK)
                 .unlockedBy("has_dysprosium_block", has(LanthanistBlocks.DYSPROSIUM_BLOCK)).save(recipeOutput, "lanthanist:dysprosium_ingot_from_block");
@@ -44,6 +51,10 @@ public class LanthanistRecipeProvider extends RecipeProvider implements IConditi
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.DYSPROSIUM_NUGGET.get(), 9)
                 .requires(LanthanistItems.DYSPROSIUM_INGOT)
                 .unlockedBy("has_dysprosium_ingot", has(LanthanistItems.DYSPROSIUM_INGOT)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.RAW_RARE_EARTH.get(), 9)
+                .requires(LanthanistBlocks.RAW_RARE_EARTH_BLOCK)
+                .unlockedBy("has_raw_rare-earth_block", has(LanthanistBlocks.RAW_RARE_EARTH_BLOCK)).save(recipeOutput);
 
         oreSmelting(recipeOutput, RARE_EARTH_SMELTABLES, RecipeCategory.MISC, LanthanistItems.DYSPROSIUM_INGOT.get(), 1.0f, 200, "dysprosium");
         oreBlasting(recipeOutput, RARE_EARTH_SMELTABLES, RecipeCategory.MISC, LanthanistItems.DYSPROSIUM_INGOT.get(), 1.0f, 100, "dysprosium");

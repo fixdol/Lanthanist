@@ -22,12 +22,14 @@ public class LanthanistBlockTagProvider extends BlockTagsProvider {
                 .add(LanthanistBlocks.DYSPROSIUM_BLOCK.get())
                 .add(LanthanistBlocks.RARE_EARTH_ORE.get())
                 .add(LanthanistBlocks.DEEPSLATE_RARE_EARTH_ORE.get())
+                .add(LanthanistBlocks.RAW_RARE_EARTH_BLOCK.get())
                 .add(LanthanistBlocks.LIGHT_ACCUMULATOR.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(LanthanistBlocks.DYSPROSIUM_BLOCK.get())
                 .add(LanthanistBlocks.RARE_EARTH_ORE.get())
                 .add(LanthanistBlocks.DEEPSLATE_RARE_EARTH_ORE.get())
+                .add(LanthanistBlocks.RAW_RARE_EARTH_BLOCK.get())
                 .add(LanthanistBlocks.LIGHT_ACCUMULATOR.get());
     }
 }

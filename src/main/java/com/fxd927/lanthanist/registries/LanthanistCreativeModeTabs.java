@@ -19,6 +19,7 @@ public class LanthanistCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(LanthanistBlocks.RARE_EARTH_ORE);
                         output.accept(LanthanistBlocks.DEEPSLATE_RARE_EARTH_ORE);
+                        output.accept(LanthanistBlocks.RAW_RARE_EARTH_BLOCK);
                         output.accept(LanthanistBlocks.DYSPROSIUM_BLOCK);
                         output.accept(LanthanistBlocks.LIGHT_ACCUMULATOR);
                         output.accept(LanthanistItems.RAW_RARE_EARTH);

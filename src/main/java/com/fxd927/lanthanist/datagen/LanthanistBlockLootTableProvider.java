@@ -18,6 +18,7 @@ public class LanthanistBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(LanthanistBlocks.DYSPROSIUM_BLOCK.get());
+        dropSelf(LanthanistBlocks.RAW_RARE_EARTH_BLOCK.get());
         dropSelf(LanthanistBlocks.LIGHT_ACCUMULATOR.get());
 
         add(LanthanistBlocks.RARE_EARTH_ORE.get(),

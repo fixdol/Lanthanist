@@ -19,6 +19,7 @@ public class LanthanistBlocks {
     public static final DeferredBlock<Block> DYSPROSIUM_BLOCK;
     public static final DeferredBlock<Block> RARE_EARTH_ORE;
     public static final DeferredBlock<Block> DEEPSLATE_RARE_EARTH_ORE;
+    public static final DeferredBlock<Block> RAW_RARE_EARTH_BLOCK;
     public static final DeferredBlock<LightAccumulatorBlock> LIGHT_ACCUMULATOR;
 
     private static <T extends  Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
@@ -48,6 +49,11 @@ public class LanthanistBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(6.5F, 6.0F)
                 .sound(SoundType.DEEPSLATE)
+        ));
+        RAW_RARE_EARTH_BLOCK = registerBlock("raw_rare-earth_block", () -> new Block(BlockBehaviour.Properties.of()
+                .requiresCorrectToolForDrops()
+                .strength(5.0F, 6.0F)
+                .sound(SoundType.STONE)
         ));
         LIGHT_ACCUMULATOR = registerBlock("light_accumulator", () -> new LightAccumulatorBlock(BlockBehaviour.Properties.of()
                 .requiresCorrectToolForDrops()
