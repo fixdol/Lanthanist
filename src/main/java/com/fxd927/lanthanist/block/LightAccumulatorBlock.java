@@ -1,32 +1,28 @@
 package com.fxd927.lanthanist.block;
 
-import com.fxd927.lanthanist.blockentity.LightAccumulatorBlockEntity;
-import com.fxd927.lanthanist.registries.LanthanistBlockEntity;
+import com.fxd927.lanthanist.block.blockentity.LightAccumulatorBlockEntity;
+import com.fxd927.lanthanist.registries.LanthanistBlockEntityTypes;
 import com.mojang.serialization.MapCodec;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
 
 public class LightAccumulatorBlock extends BaseEntityBlock {
-    public static final MapCodec<LightAccumulatorBlock> CODEC = RecordCodecBuilder.mapCodec(instance ->
-            instance.group(
-                    BlockBehaviour.Properties.CODEC.fieldOf("properties").forGetter(block -> block.properties)
-            ).apply(instance, LightAccumulatorBlock::new)
-    );
-
     public LightAccumulatorBlock(Properties properties) {
         super(properties);
     }
 
     @Override
     protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
+        return null;
     }
 
     @Override
@@ -34,9 +30,14 @@ public class LightAccumulatorBlock extends BaseEntityBlock {
         return new LightAccumulatorBlockEntity(pos, state);
     }
 
-    @SuppressWarnings("unchecked")
     @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
-        return type == LanthanistBlockEntity.LIGHT_ACCUMULATOR.get() ? LightAccumulatorBlockEntity::tick : null;
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
+        if (!level.isClientSide) {
+            BlockEntity entity = level.getBlockEntity(pos);
+            if (entity instanceof LightAccumulatorBlockEntity tank) {
+                player.sendSystemMessage(Component.literal("Light Stored: " + tank.getLightStored() + " / " + tank.getMaxLightStored()));
+            }
+        }
+        return InteractionResult.SUCCESS;
     }
 }

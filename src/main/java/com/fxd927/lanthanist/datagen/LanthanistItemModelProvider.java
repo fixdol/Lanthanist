@@ -13,8 +13,12 @@ public class LanthanistItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        basicItem(LanthanistItems.CERIUM_INGOT.get());
+        basicItem(LanthanistItems.CERIUM_NUGGET.get());
         basicItem(LanthanistItems.DYSPROSIUM_INGOT.get());
         basicItem(LanthanistItems.DYSPROSIUM_NUGGET.get());
+        basicItem(LanthanistItems.LANTHANUM_INGOT.get());
+        basicItem(LanthanistItems.LANTHANUM_NUGGET.get());
         basicItem(LanthanistItems.RAW_RARE_EARTH.get());
     }
 }

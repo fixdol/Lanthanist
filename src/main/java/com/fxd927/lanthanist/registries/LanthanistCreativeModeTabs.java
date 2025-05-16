@@ -20,11 +20,17 @@ public class LanthanistCreativeModeTabs {
                         output.accept(LanthanistBlocks.RARE_EARTH_ORE);
                         output.accept(LanthanistBlocks.DEEPSLATE_RARE_EARTH_ORE);
                         output.accept(LanthanistBlocks.RAW_RARE_EARTH_BLOCK);
+                        output.accept(LanthanistBlocks.LANTHANUM_BLOCK);
                         output.accept(LanthanistBlocks.DYSPROSIUM_BLOCK);
-                        output.accept(LanthanistBlocks.LIGHT_ACCUMULATOR);
+                        output.accept(LanthanistBlocks.CERIUM_BLOCK);
+                        output.accept(LanthanistBlocks.SUN_ABSORBER);
                         output.accept(LanthanistItems.RAW_RARE_EARTH);
+                        output.accept(LanthanistItems.LANTHANUM_INGOT);
+                        output.accept(LanthanistItems.LANTHANUM_NUGGET);
                         output.accept(LanthanistItems.DYSPROSIUM_INGOT);
                         output.accept(LanthanistItems.DYSPROSIUM_NUGGET);
+                        output.accept(LanthanistItems.CERIUM_INGOT);
+                        output.accept(LanthanistItems.CERIUM_NUGGET);
                     }).build());
 
     private LanthanistCreativeModeTabs(){

@@ -26,7 +26,7 @@ public class Lanthanist
         modEventBus.addListener(this::commonSetup);
         LanthanistCreativeModeTabs.CREATIVE_MODE_TAB.register(modEventBus);
         LanthanistBlocks.BLOCKS.register(modEventBus);
-        LanthanistBlockEntity.BLOCK_ENTITY_TYPES.register(modEventBus);
+        LanthanistBlockEntityTypes.BLOCK_ENTITY_TYPES.register(modEventBus);
         LanthanistItems.ITEMS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dysprosium_nugget": {
+    "has_cerium_nugget": {
       "conditions": {
         "items": [
           {
-            "items": "lanthanist:dysprosium_nugget"
+            "items": "lanthanist:cerium_nugget"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_dysprosium_nugget"
+      "has_cerium_nugget"
     ]
   ],
   "rewards": {

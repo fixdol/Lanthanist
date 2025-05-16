@@ -23,6 +23,20 @@ public class LanthanistRecipeProvider extends RecipeProvider implements IConditi
         List<ItemLike> RARE_EARTH_SMELTABLES = List.of(LanthanistItems.RAW_RARE_EARTH,
                 LanthanistBlocks.RARE_EARTH_ORE, LanthanistBlocks.DEEPSLATE_RARE_EARTH_ORE);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LanthanistBlocks.CERIUM_BLOCK.get())
+                .pattern("CCC")
+                .pattern("CCC")
+                .pattern("CCC")
+                .define('C', LanthanistItems.CERIUM_INGOT.get())
+                .unlockedBy("has_cerium_ingot", has(LanthanistItems.CERIUM_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LanthanistItems.CERIUM_INGOT.get())
+                .pattern("CCC")
+                .pattern("CCC")
+                .pattern("CCC")
+                .define('C', LanthanistItems.CERIUM_NUGGET.get())
+                .unlockedBy("has_cerium_nugget", has(LanthanistItems.CERIUM_NUGGET)).save(recipeOutput, "lanthanist:cerium_ingot_from_nuggets");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LanthanistBlocks.DYSPROSIUM_BLOCK.get())
                 .pattern("DDD")
                 .pattern("DDD")
@@ -37,12 +51,35 @@ public class LanthanistRecipeProvider extends RecipeProvider implements IConditi
                 .define('D', LanthanistItems.DYSPROSIUM_NUGGET.get())
                 .unlockedBy("has_dysprosium_nugget", has(LanthanistItems.DYSPROSIUM_NUGGET)).save(recipeOutput, "lanthanist:dysprosium_ingot_from_nuggets");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LanthanistBlocks.LANTHANUM_BLOCK.get())
+                .pattern("LLL")
+                .pattern("LLL")
+                .pattern("LLL")
+                .define('L', LanthanistItems.LANTHANUM_INGOT.get())
+                .unlockedBy("has_lanthanum_ingot", has(LanthanistItems.LANTHANUM_INGOT)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LanthanistItems.LANTHANUM_INGOT.get())
+                .pattern("LLL")
+                .pattern("LLL")
+                .pattern("LLL")
+                .define('L', LanthanistItems.LANTHANUM_NUGGET.get())
+                .unlockedBy("has_lanthanum_nugget", has(LanthanistItems.LANTHANUM_NUGGET)).save(recipeOutput, "lanthanist:lanthanum_ingot_from_nuggets");
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, LanthanistBlocks.RAW_RARE_EARTH_BLOCK.get())
                 .pattern("RRR")
                 .pattern("RRR")
                 .pattern("RRR")
                 .define('R', LanthanistItems.RAW_RARE_EARTH.get())
                 .unlockedBy("has_raw_rare-earth", has(LanthanistItems.RAW_RARE_EARTH)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.CERIUM_INGOT.get(), 9)
+                .requires(LanthanistBlocks.CERIUM_BLOCK)
+                .unlockedBy("has_cerium_block", has(LanthanistBlocks.CERIUM_BLOCK)).save(recipeOutput, "lanthanist:cerium_ingot_from_block");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.CERIUM_NUGGET.get(), 9)
+                .requires(LanthanistItems.CERIUM_INGOT)
+                .unlockedBy("has_cerium_ingot", has(LanthanistItems.CERIUM_INGOT)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.DYSPROSIUM_INGOT.get(), 9)
                 .requires(LanthanistBlocks.DYSPROSIUM_BLOCK)
@@ -51,6 +88,14 @@ public class LanthanistRecipeProvider extends RecipeProvider implements IConditi
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.DYSPROSIUM_NUGGET.get(), 9)
                 .requires(LanthanistItems.DYSPROSIUM_INGOT)
                 .unlockedBy("has_dysprosium_ingot", has(LanthanistItems.DYSPROSIUM_INGOT)).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.LANTHANUM_INGOT.get(), 9)
+                .requires(LanthanistBlocks.LANTHANUM_BLOCK)
+                .unlockedBy("has_lanthanum_block", has(LanthanistBlocks.LANTHANUM_BLOCK)).save(recipeOutput, "lanthanist:lanthanum_ingot_from_block");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.LANTHANUM_NUGGET.get(), 9)
+                .requires(LanthanistItems.LANTHANUM_INGOT)
+                .unlockedBy("has_lanthanum_ingot", has(LanthanistItems.LANTHANUM_INGOT)).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LanthanistItems.RAW_RARE_EARTH.get(), 9)
                 .requires(LanthanistBlocks.RAW_RARE_EARTH_BLOCK)

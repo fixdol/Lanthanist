@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cerium_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lanthanist:cerium_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lanthanist:cerium_ingot_from_nuggets"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cerium_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lanthanist:cerium_ingot_from_nuggets"
+    ]
+  }
+}

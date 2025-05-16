@@ -1,12 +1,18 @@
 {
+  "block.lanthanist.cerium_block": "セリウムブロック",
   "block.lanthanist.dysprosium_block": "ジスプロシウムブロック",
+  "block.lanthanist.lanthanum_block": "ランタンブロック",
   "block.lanthanist.rare-earth_ore": "希土鉱石",
   "block.lanthanist.deepslate_rare-earth_ore": "深層希土鉱石",
   "block.lanthanist.raw_rare-earth_block": "希土類の原石ブロック",
-  "block.lanthanist.light_accumulator": "蓄光機",
+  "block.lanthanist.sun_absorber": "太陽光吸収器",
   "block.lanthanist.optical_fiber": "光ファイバーケーブル",
   "creativetab.lanthanist.lanthanist": "Lanthanist",
+  "item.lanthanist.cerium_ingot": "セリウムインゴット",
+  "item.lanthanist.cerium_nugget": "セリウム塊",
   "item.lanthanist.dysprosium_ingot": "ジスプロシウムインゴット",
   "item.lanthanist.dysprosium_nugget": "ジスプロシウム塊",
+  "item.lanthanist.lanthanum_ingot": "ランタンインゴット",
+  "item.lanthanist.lanthanum_nugget": "ランタン塊",
   "item.lanthanist.raw_rare-earth": "希土類の原石"
 }

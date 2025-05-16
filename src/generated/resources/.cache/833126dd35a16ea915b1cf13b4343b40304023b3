@@ -1,3 +1,2 @@
-// 1.21.1	2025-02-08T16:56:41.3021312	Tags for minecraft:block mod id lanthanist
-b6c828f274fba1016089b266c5a8c0c3004660c2 data/minecraft/tags/block/mineable/pickaxe.json
-b6c828f274fba1016089b266c5a8c0c3004660c2 data/minecraft/tags/block/needs_diamond_tool.json
+// 1.21.1	2025-04-07T21:18:30.0396643	Tags for minecraft:block mod id lanthanist
+d2f6e06ff95ba10ed6ed4adaa294e583c14b7de9 data/minecraft/tags/block/needs_diamond_tool.json

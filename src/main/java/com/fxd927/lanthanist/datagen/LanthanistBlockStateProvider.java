@@ -14,11 +14,13 @@ public class LanthanistBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(LanthanistBlocks.CERIUM_BLOCK);
         blockWithItem(LanthanistBlocks.DYSPROSIUM_BLOCK);
+        blockWithItem(LanthanistBlocks.LANTHANUM_BLOCK);
         blockWithItem(LanthanistBlocks.RARE_EARTH_ORE);
         blockWithItem(LanthanistBlocks.DEEPSLATE_RARE_EARTH_ORE);
         blockWithItem(LanthanistBlocks.RAW_RARE_EARTH_BLOCK);
-        blockWithItem(LanthanistBlocks.LIGHT_ACCUMULATOR);
+        blockWithItem(LanthanistBlocks.SUN_ABSORBER);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

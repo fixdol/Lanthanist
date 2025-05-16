@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "lanthanist:item/dysprosium_nugget"
+    "layer0": "lanthanist:item/cerium_ingot"
   }
 }
