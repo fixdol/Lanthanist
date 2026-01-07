@@ -16,6 +16,7 @@ public class LanthanistItems {
     public static final DeferredItem<Item> LANTHANUM_NUGGET;
     public static final DeferredItem<Item> RAW_RARE_EARTH;
 
+
     static {
         CERIUM_INGOT = ITEMS.register("cerium_ingot", () -> new Item(new Item.Properties()));
         CERIUM_NUGGET = ITEMS.register("cerium_nugget", () -> new Item(new Item.Properties()));

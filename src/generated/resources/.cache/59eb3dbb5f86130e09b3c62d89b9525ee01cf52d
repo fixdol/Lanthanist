@@ -1,8 +1,11 @@
-// 1.21.1	2025-04-07T21:18:30.0455047	Loot Tables
+// 1.21.1	2025-06-14T00:11:33.6871762	Loot Tables
+cf3feffb8ed4615ade6f23e0a8476b36282aa0ea data/lanthanist/loot_table/blocks/basic_machine_casing.json
 5537c0c3034efd198741a73bb2464cced9b26435 data/lanthanist/loot_table/blocks/cerium_block.json
 21fe1b870d1f7b140df74f75426bd9ce528df58f data/lanthanist/loot_table/blocks/deepslate_rare-earth_ore.json
 ebb147fc25a3077434027b83c7872e114b1b74db data/lanthanist/loot_table/blocks/dysprosium_block.json
+45b7e1eb2e08998a8bfa98dc17466c040a43e989 data/lanthanist/loot_table/blocks/glass_optical_fiber_block.json
 c22eecfc341b911ed7cb19cb40f1e4080f4f56da data/lanthanist/loot_table/blocks/lanthanum_block.json
+463caad7d526985f2fce2dfa5d8c84fb7a4c7f7f data/lanthanist/loot_table/blocks/light_accumulator.json
 3671d190d6b661f1b73b81139df64478f3cf4f99 data/lanthanist/loot_table/blocks/rare-earth_ore.json
 54a6382b0612e90580029b4f5de9263454ecb65f data/lanthanist/loot_table/blocks/raw_rare-earth_block.json
 ce33523d825d1486c622218b0ed6d9c1717c8e51 data/lanthanist/loot_table/blocks/sun_absorber.json

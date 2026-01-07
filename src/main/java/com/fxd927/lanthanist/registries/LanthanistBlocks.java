@@ -1,6 +1,7 @@
 package com.fxd927.lanthanist.registries;
 
 import com.fxd927.lanthanist.Lanthanist;
+import com.fxd927.lanthanist.block.BasicMachineCasingBlock;
 import com.fxd927.lanthanist.block.LightAccumulatorBlock;
 import com.fxd927.lanthanist.block.SunAbsorberBlock;
 import com.fxd927.lanthanist.block.cable.GlassOpticalFiberCableBlock;
@@ -27,6 +28,7 @@ public class LanthanistBlocks {
     public static final DeferredBlock<SunAbsorberBlock> SUN_ABSORBER;
     public static final DeferredBlock<GlassOpticalFiberCableBlock> GLASS_OPTICAL_FIBER_CABLE;
     public static final DeferredBlock<LightAccumulatorBlock> LIGHT_ACCUMULATOR_BLOCK;
+    public static final DeferredBlock<BasicMachineCasingBlock> BASIC_MACHINE_CASING_BLOCK;
 
     private static <T extends  Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
@@ -82,6 +84,11 @@ public class LanthanistBlocks {
                 .sound(SoundType.GLASS)
         ));
         LIGHT_ACCUMULATOR_BLOCK = registerBlock("light_accumulator", () -> new LightAccumulatorBlock(BlockBehaviour.Properties.of()
+                .requiresCorrectToolForDrops()
+                .strength(5.0f,6.0F)
+                .sound(SoundType.METAL)
+        ));
+        BASIC_MACHINE_CASING_BLOCK = registerBlock("basic_machine_casing", () -> new BasicMachineCasingBlock(BlockBehaviour.Properties.of()
                 .requiresCorrectToolForDrops()
                 .strength(5.0f,6.0F)
                 .sound(SoundType.METAL)

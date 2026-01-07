@@ -12,6 +12,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -61,5 +62,12 @@ public class Lanthanist
         public static void onClientSetup(FMLClientSetupEvent event)
         {
         }
+
+        //@SubscribeEvent
+        //public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+            //event.registerBlockEntityRenderer(LanthanistBlockEntityTypes.BASIC_MACHINE_CASING.get(),
+                    //context -> new BasicMachineCasingRenderer()
+            //);
+        //}
     }
 }
