@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": {
-      "item": "lanthanist:cerium_nugget"
+    "D": {
+      "item": "lanthanist:dysprosium_nugget"
     }
   },
   "pattern": [
-    "CCC",
-    "CCC",
-    "CCC"
+    "DDD",
+    "DDD",
+    "DDD"
   ],
   "result": {
     "count": 1,
-    "id": "lanthanist:cerium_ingot"
+    "id": "lanthanist:dysprosium_ingot"
   }
 }
